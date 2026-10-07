@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIVEX Jobs Kenya | Find Work. Find Talent.</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        TRI<span>VEX</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#jobs">Jobs</a>
+        <a href="#categories">Categories</a>
+        <a href="#how">How It Works</a>
+        <a href="#register" class="register-btn">Register</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>
+        Find Work. Find <span>Talent.</span>
+    </h1>
+
+    <p>
+        TRIVEX Jobs Kenya connects skilled workers with employers
+        looking for reliable people. Find opportunities near you
+        or find the right worker for your job.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="#register" class="btn primary">I AM A WORKER</a>
+        <a href="#register" class="btn secondary">I AM AN EMPLOYER</a>
+    </div>
+</section>
+
+<div class="search-box" id="jobs">
+    <h2>🔎 Find Jobs or Workers</h2>
+
+    <div class="search-form">
+        <input type="text" id="searchInput" placeholder="Search job or profession...">
+
+        <select id="location">
+            <option value="">Select Location</option>
+            <option>Nairobi</option>
+            <option>Nakuru</option>
+            <option>Eldoret</option>
+            <option>Kisumu</option>
+            <option>Mombasa</option>
+            <option>Kericho</option>
+            <option>Kitale</option>
+            <option>Other</option>
+        </select>
+
+        <button id="searchButton">Search</button>
+    </div>
+
+    <p id="searchResult" class="search-result"></p>
+
+    <div id="jobResults" class="job-results"></div>
+</div>
+
+<section id="categories">
+    <div class="section-title">
+        <h2>Popular Job Categories</h2>
+        <p>Find skilled workers across different professions.</p>
+    </div>
+
+    <div id="categoryGrid" class="categories"></div>
+</section>
+
+<section id="how">
+    <div class="section-title">
+        <h2>How TRIVEX Works</h2>
+        <p>Getting connected is simple.</p>
+    </div>
+
+    <div class="steps">
+        <div class="step">
+            <div class="step-number">1</div>
+            <h3>Create Your Account</h3>
+            <p>Register as either a worker looking for opportunities or an employer looking for skilled workers.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">2</div>
+            <h3>Find a Match</h3>
+            <p>Search jobs or workers according to profession, skills and location.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">3</div>
+            <h3>Connect</h3>
+            <p>Contact the worker or employer and discuss the job directly.</p>
+        </div>
+    </div>
+</section>
+
+<section class="registration" id="register">
+    <h2>Join TRIVEX Today</h2>
+    <p>Become part of a growing network connecting workers and employers across Kenya.</p>
+
+    <div class="fee">KSh 500</div>
+    <p>Registration Fee</p>
+
+    <div class="mpesa">
+        <h3>💚 M-Pesa Registration</h3>
+        <p>Registration payment number:</p>
+        <div class="mpesa-number">0792037092</div>
+        <p style="margin-top:15px;">
+            Keep your transaction confirmation. The full website will verify payments before activating an account.
+        </p>
+    </div>
+
+    <div class="registration-options">
+        <div class="registration-card">
+            <h3>👷 I'm a Worker</h3>
+            <p>Create your professional profile, showcase your skills and find employers looking for your services.</p>
+            <button class="btn primary register-type" data-role="worker">Register as Worker</button>
+        </div>
+
+        <div class="registration-card">
+            <h3>🏢 I'm an Employer</h3>
+            <p>Find skilled workers, post jobs and connect with people who can help your business or household.</p>
+            <button class="btn primary register-type" data-role="employer">Register as Employer</button>
+        </div>
+    </div>
+
+    <form id="registrationForm" class="registration-form">
+        <h3>Register Now</h3>
+        <div class="form-grid">
+            <input type="text" name="fullName" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="text" name="profession" placeholder="Profession / Skill" required>
+            <select name="location" required>
+                <option value="">Select Location</option>
+                <option>Nairobi</option>
+                <option>Nakuru</option>
+                <option>Eldoret</option>
+                <option>Kisumu</option>
+                <option>Mombasa</option>
+                <option>Kericho</option>
+                <option>Kitale</option>
+                <option>Other</option>
+            </select>
+            <input type="text" name="experience" placeholder="Experience (optional)">
+            <input type="text" name="paymentReference" placeholder="M-Pesa Reference">
+        </div>
+
+        <input type="hidden" name="userType" id="userType" value="worker">
+
+        <button type="submit" class="btn primary">Submit Registration</button>
+        <div id="formMessage" class="form-message"></div>
+    </form>
+</section>
+
+<footer>
+    <h2>TRIVEX Jobs Kenya</h2>
+    <p>Connecting Skills to Opportunities.</p>
+    <p>© 2026 TRIVEX. All Rights Reserved.</p>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
