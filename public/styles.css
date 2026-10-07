@@ -57,11 +57,10 @@
             <option>Other</option>
         </select>
 
-        <button id="searchButton">Search</button>
+        <button id="searchButton" type="button">Search</button>
     </div>
 
     <p id="searchResult" class="search-result"></p>
-
     <div id="jobResults" class="job-results"></div>
 </div>
 
@@ -121,13 +120,13 @@
         <div class="registration-card">
             <h3>👷 I'm a Worker</h3>
             <p>Create your professional profile, showcase your skills and find employers looking for your services.</p>
-            <button class="btn primary register-type" data-role="worker">Register as Worker</button>
+            <button class="btn primary register-type" data-role="worker" type="button">Register as Worker</button>
         </div>
 
         <div class="registration-card">
             <h3>🏢 I'm an Employer</h3>
             <p>Find skilled workers, post jobs and connect with people who can help your business or household.</p>
-            <button class="btn primary register-type" data-role="employer">Register as Employer</button>
+            <button class="btn primary register-type" data-role="employer" type="button">Register as Employer</button>
         </div>
     </div>
 
